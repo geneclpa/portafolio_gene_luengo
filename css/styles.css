@@ -303,6 +303,8 @@ img{
 @media screen and (min-width: 576px){
 
     /*  Site styles  */
+    .logo > a{ font-size: 1.6rem; }
+
     .about p, .about ul{ font-size: 1.3rem; }
 
     /*  utilities  */
