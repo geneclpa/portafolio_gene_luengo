@@ -307,7 +307,7 @@ img{
 }
 
 .portfolio_card img{
-    width: 100%;
+    width: 800px;
     height: 100%;
     object-fit: cover;
 }
@@ -331,13 +331,21 @@ img{
     pointer-events: visible;
 }
 
-.portfolio_card:hover .portfolio_card_info h3{ margin-bottom: 20px; }
+.portfolio_card .portfolio_card_info h3{ margin-bottom: 10px; }
 
 .portfolio_card .portfolio_card_info > div{
     border: thin solid var(--white_color);
-    padding: 1rem;
+    padding: .5rem;
     width: 100%;
     height: 100%;
+}
+
+.portfolio > .container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
 }
 
 /*  Media queries  */
@@ -348,9 +356,9 @@ img{
 
     .about p, .about ul{ font-size: 1.3rem; }
 
-    .portfolio_card:hover .portfolio_card_info h3{ font-size: 1.8rem; }
+    .portfolio_card .portfolio_card_info h3{ font-size: 1.8rem; }
 
-    .portfolio_card:hover .portfolio_card_info p{ font-size: 1.6rem; }
+    .portfolio_card .portfolio_card_info p{ font-size: 1.6rem; }
 
     /*  utilities  */
     .full_md_screen{
@@ -382,7 +390,7 @@ img{
 .services{
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 
     .services > .container{
@@ -394,17 +402,22 @@ img{
 
     .services > .container .section_title{ grid-column: span 2; }
 
+    .portfolio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .portfolio > .container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-
     }
 
     .portfolio > .container .section_title{ grid-column: span 2; }
 
-    .portfolio_card:hover .portfolio_card_info h3{ font-size: 1.3rem; }
+    .portfolio_card .portfolio_card_info h3{ font-size: 1.3rem; }
 
-    .portfolio_card:hover .portfolio_card_info p{ font-size: 1.1rem; }
+    .portfolio_card .portfolio_card_info p{ font-size: 1.1rem; }
 
 }
 
@@ -443,6 +456,10 @@ img{
     .services > .container{ grid-template-columns: repeat(3, 1fr); }
 
     .services > .container .section_title{ grid-column: span 3; }
+
+    .portfolio_card .portfolio_card_info h3{ font-size: 1.6rem; }
+
+    .portfolio_card .portfolio_card_info p{ font-size: 1.4rem; }
 
     /*  Componets  */
     /*  Menu  */
@@ -485,6 +502,12 @@ img{
 
 @media screen and (min-width: 1200px){
 
+    /* Site styles  */
+    .portfolio_card .portfolio_card_info h3{ font-size: 2rem; }
+
+    .portfolio_card .portfolio_card_info p{ font-size: 1.8rem; }
+
+    /*  Utilities  */
     .section_xxl{ padding: 4rem 0 2rem 0; }
 
 }
