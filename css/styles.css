@@ -229,6 +229,41 @@ img{
     font-size: 8vw;
 }
 
+.modal{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--black_alpha_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+}
+
+.modal_content{ position: relative; }
+
+.modal_close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.modal_close svg{
+    width: 3rem;
+    height: 3rem;
+    fill: var(--first_color);
+}
+
+.modal[id|="trabajo"]:target{
+    opacity: 1;
+    pointer-events: visible;
+}
+
 /*  Site styles  */
 /*  Header   */
 .header{
@@ -307,7 +342,7 @@ img{
 }
 
 .portfolio_card img{
-    width: 800px;
+    width: 600px;
     height: 100%;
     object-fit: cover;
 }
@@ -345,7 +380,6 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
 }
 
 /*  Media queries  */
