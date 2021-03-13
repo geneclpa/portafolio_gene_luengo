@@ -518,6 +518,7 @@ img{
 .contact_card > svg{
     width: 2rem;
     height: 2rem;
+    fill: var(--first_color);
 }
 
 .contact_card > small{ margin-top: -1rem; }
@@ -528,6 +529,14 @@ img{
 }
 
 .contact_card > small a:hover{ text-decoration: underline; }
+
+.footer{
+    background-color: var(--first_color);
+    color: var(--white_color);
+    text-align: center;
+    padding: .5rem;
+    margin-bottom: var(--header_height);
+}
 
 /*  Media queries  */
 @media screen and (min-width: 576px){
@@ -685,6 +694,8 @@ img{
     .portfolio_card .portfolio_card_info h3{ font-size: 1.6rem; }
 
     .portfolio_card .portfolio_card_info p{ font-size: 1.4rem; }
+
+    .footer{ margin-bottom: 0; }
 
     /*  Componets  */
     /*  Menu  */
