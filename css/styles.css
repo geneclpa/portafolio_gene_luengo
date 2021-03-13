@@ -158,6 +158,32 @@ img{
     color: var(--title_color)
 }
 
+.input_error{
+    background-color: red;
+    color: var(--white_color);
+    padding: 5px;
+    font-size: .7rem;
+    margin-top: -1rem;
+}
+
+.input_error.is-active{
+    display: block;
+    animation: show-message 1s 1 normal 0s ease-out both;
+}
+
+/*  Animación de los mensajes de error  */
+@keyframes show-message{
+    0%{
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
 /*  Componets  */
 /*  Menu  */
 .menu_btn{
@@ -296,8 +322,9 @@ img{
     resize: none;
 }
 
+.contact_form input[name="name"]{ text-transform: capitalize; }
+
 .contact_form input[type="submit"]{
-    margin-top: 0;
     cursor: pointer;
     transition: all .5s ease-out;
     border: 0;
