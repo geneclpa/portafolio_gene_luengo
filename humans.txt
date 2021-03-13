@@ -1,0 +1,38 @@
+/* Gene Luengo - España. Portafolio profesional */
+
+/* SITE OWNER */
+
+	NAME: Gene Luengo
+	EMAIL: geneluengo[at]gmail.com
+
+
+/* TEAM */
+
+	WEB DESIGNER AND CONTENT DEVELOPER: Gene Luengo
+	EMAIL: geneluengo[at]gmail.com
+	LOCATION: Valencia - España
+
+/*  RESOURCES  */
+
+	Envió de formulario con formsubmit
+	SITE: https://formsubmit.co/
+
+/* THANKS */
+
+	Canal de youtube @jonmircha
+	Taller de Maquetación
+	México
+	SITE: https://jonmircha.com/
+
+
+/* SITE	*/
+
+	CREATE: 03.13.2021
+	LAST UPDATE:
+	LANGUAGE: Spanish
+	DOCTYPE: HTML5
+	VERSION: 1.0
+	STANDARDS: HTML5, CCS, JAVASCRIP, Ajax, FileZilla
+	SOFTWARE: Visual Studio Code
+
+/* http://humanstxt.org */
