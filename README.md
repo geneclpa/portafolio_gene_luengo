@@ -4,4 +4,4 @@ Portafolio profesional, soy Gene Luengo, programador de páginas y aplicaciones 
 
 ## Landing page - Tipo portafolio
 
--[Landing Page - Portafolio profesional]
+-[Landing Page - Portafolio profesional](https://geneclpa.github.io/portafolio_gene_luengo/)
