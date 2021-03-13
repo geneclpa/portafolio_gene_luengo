@@ -250,7 +250,14 @@ img{
     pointer-events: visible;
 }
 
-.modal_content{ position: relative; }
+.modal_content{
+    width: 90%;
+    height: 90%;
+    overflow-y: scroll;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .modal_close{
     position: absolute;
@@ -359,36 +366,40 @@ img{
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.5s ease-in-out;
-}
+} 
 
 .portfolio_card:hover .portfolio_card_info{
     opacity: 1;
     pointer-events: visible;
 }
 
-.portfolio_card .portfolio_card_info h3{ margin-bottom: 10px; }
+.portfolio_card .portfolio_card_info h3{ margin-top: 10px; }
 
 .portfolio_card .portfolio_card_info > div{
     border: thin solid var(--white_color);
     padding: .5rem;
     width: 100%;
     height: 100%;
+    overflow-y: scroll;
 }
 
 .portfolio > .container div{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 .portfolio_modal{
     background-color: var(--white_color);
     padding: 1rem;
-    max-width: 300px;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
 
+.portfolio_modal img{
+    margin-top: 3rem;
+    object-fit: cover;
 }
 
 .portfolio_modal h3{
@@ -402,9 +413,11 @@ img{
 
 .portfolio_details{
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 20% 80%;
     grid-auto-rows: 2rem;
 }
+
+.portfolio_details b{ color: var(--first_color); }
 
 /*  Media queries  */
 @media screen and (min-width: 576px){
@@ -444,6 +457,8 @@ img{
         min-height: 100vh;
     }
 
+    .modal_content{ max-width: 100%; }
+
     /*  Site styles  */
 .services{
     display: flex;
@@ -476,6 +491,15 @@ img{
     .portfolio_card .portfolio_card_info h3{ font-size: 1.3rem; }
 
     .portfolio_card .portfolio_card_info p{ font-size: 1.1rem; }
+
+    .portfolio_modal{ flex-direction: row; }
+
+    .portfolio_modal img{ margin-top: 0; }
+
+    .portfolio_info{ 
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
 
 }
 
@@ -541,6 +565,12 @@ img{
     .hero_image_title{ font-size: 6vw; }
 
     .btn{ font-size: 2vw; }
+
+    .modal_content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     /*  Utilities  */
     .text_xl_left{ text-align: left; }
